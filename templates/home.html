@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css"
+      href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+  {% block content %}
+        <nav id = "navbar">
+          <div class = "container">
+            <ul>
+          <li><a>Home</a></li>
+          <li><a href="{% url 'products:home' %}">products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contacts</a></li>
+          
+            </ul>
+        </div>
+      </nav>
+    
+      <section id = "view">
+      <div class = "container">
+        <h1>This is Our Online website.We welcome you for happy shopping.have a nice day
+
+        </h1>
+
+
+      </div>
+
+
+
+      </section>
+      <footer id = "main-footer">
+        <p>Copyright &copy; 2020 My Website</p>
+
+      </footer>
+      {% endblock %}
+</body>
+
+</html>

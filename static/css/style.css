@@ -1,0 +1,22 @@
+h1 {
+
+    color: aqua;
+}
+
+
+#view{
+ color: darkmagenta;
+
+
+}
+
+#navbar li{
+ display: inline;
+   
+}
+
+#navbar ul{
+
+    width: 60%;
+    list-style: none;
+}
